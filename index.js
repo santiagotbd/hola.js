@@ -11,7 +11,7 @@ function obtenerHora() {
 }
 
 app.get("/", (req, res) => {
-  res.send(obtenerMensaje());
+  res.send(`${obtenerMensaje()<br>Hora actual: ${obtenerHora()}`);
 });
 
 app.get("/health", (req, res) => res.status(200).send("ok"));
