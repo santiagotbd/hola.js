@@ -7,6 +7,7 @@ function obtenerMensaje() {
 
 function obtenerHora() {
   const ahora = new Date(); //Date
+  // CORRECCIÓN: Se cerró la comilla y se usó timeZone (CamelCase)
   return ahora.toLocaleString("es-PE", { timeZone: "America/Lima" });
 }
 
@@ -20,3 +21,4 @@ const PORT = process.env.PORT || 5000;
 app.listen(PORT, "0.0.0.0", () => {
   console.log(`Servidor escuchando en puerto ${PORT}`);
 });
+
